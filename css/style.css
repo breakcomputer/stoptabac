@@ -1,0 +1,365 @@
+body {
+    margin: 0; /* Supprime les marges par défaut */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #fafafa; /* Fond clair pour une bonne lisibilité */
+}
+
+header, footer {
+    background: #222; /* Couleur sombre pour contraste */
+    color: #fff; /* Texte blanc pour visibilité */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex; /* Organisation en ligne des éléments */
+    align-items: center;
+    justify-content: space-between; /* Éléments répartis aux extrémités */
+    max-width: 1200px; /* Limite la largeur pour éviter l'étirement */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none; /* Retire le soulignement des liens */
+    color: #fff; /* Liens en blanc */
+    transition: color 0.3s ease; /* Animation douce au survol */
+}
+
+.nav-links a:hover {
+    color: #f0db4f; /* Couleur de survol pour feedback visuel */
+}
+
+.nav-links .active {
+    color: #f0db4f;
+}
+
+.burger {
+    display: none; /* Masqué sur les grands écrans */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger span {
+    background: #fff;
+    margin: 4px 0;
+    width: 25px;
+    height: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Section Hero */
+.hero {
+    position: relative;
+    min-height: 80vh; /* Grande hauteur pour un effet impactant */
+    background-size: cover; /* Fond bien ajusté */
+    background-position: center;
+    display: flex; /* Centrage du contenu */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; /* Texte lisible sur fond sombre */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4); /* Couche sombre pour améliorer le contraste */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem; /* Texte principal mis en avant */
+    margin-bottom: 1rem;
+    text-transform: uppercase; /* Majuscules pour impact visuel */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #f0db4f; /* Couleur vive pour attirer l'attention */
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease; /* Animation douce au survol */
+}
+
+.btn-primary:hover {
+    background: #e5c944;
+}
+
+/* Sections */
+.container {
+    max-width: 1200px; /* Limite la largeur du contenu */
+    margin: 2rem auto; /* Centre le contenu avec un espacement vertical */
+    padding: 0 1rem;
+}
+
+.intro h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.1rem; /* Texte légèrement plus grand pour une meilleure lisibilité */
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Page-header */
+.page-header {
+    background: #f0db4f; /* Couleur vive pour la bannière */
+    padding: 3rem 0;
+    text-align: center;
+    color: #333;
+}
+.page-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Dangers content */
+.dangers-content .container {
+    display: flex; /* Mise en ligne des sections */
+    flex-wrap: wrap; /* Adaptabilité pour les écrans plus petits */
+    gap: 2rem;
+}
+
+.dangers-text {
+    flex: 1 1 400px;
+}
+
+.dangers-text h2 {
+    margin-top: 1.5rem;
+}
+
+.dangers-text p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.dangers-image {
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dangers-image img {
+    max-width: 100%;
+    border-radius: 10px; /* Arrondit les coins pour un effet esthétique */
+}
+
+/* Nouvelle Section Interactive sur les Poumons */
+.lungs-section {
+    background-color: #fff3cd; /* Fond clair et doux */
+    padding: 2rem 0;
+    border-top: 2px solid #f0db4f; /* Délimitation avec bordures colorées */
+    border-bottom: 2px solid #f0db4f;
+}
+
+.lungs-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #856404;
+}
+
+.lungs-section p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #856404;
+}
+
+#toggleLungsInfo {
+    display: block;
+    margin: 0 auto;
+    background: #856404;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px; /* Arrondi pour modernité */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#toggleLungsInfo:hover {
+    background: #6c580f; /* Couleur modifiée au survol */
+}
+
+#lungsInfo {
+    max-width: 800px;
+    margin: 1.5rem auto 0;
+    padding: 1rem;
+    background-color: #fff8e1;
+    border-left: 4px solid #f0db4f;
+    border-radius: 5px;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.visible {
+    max-height: 1000px; /* Valeur suffisamment grande pour contenir le contenu */
+    opacity: 1;
+}
+
+/* Nouvelle Section pour la Fonctionnalité Choquante */
+.shocking-section {
+    background-color: #ffe6e6; /* Couleur d'avertissement */
+    padding: 2rem 0;
+    border-top: 2px solid #ff4d4d; /* Bordures rouges pour accentuer le choc */
+    border-bottom: 2px solid #ff4d4d;
+    text-align: center;
+}
+
+.shocking-section h2 {
+    margin-bottom: 1rem;
+    color: #cc0000; /* Texte rouge pour marquer l'importance */
+}
+
+.shocking-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #cc0000;
+}
+
+
+.modal {
+    position: fixed; /* Modal en superposition par rapport au reste de la page */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8); /* Fond semi-transparent pour effet dramatique */
+    display: flex; /* Centrage horizontal et vertical du contenu */
+    align-items: center;
+    justify-content: center;
+    z-index: 1001; /* Priorité d'affichage élevée */
+}
+
+.modal-content {
+    background: #fff; /* Fond blanc pour contraste */
+    padding: 2rem;
+    border-radius: 10px; /* Coins arrondis pour un style moderne */
+    position: relative;
+    max-width: 600px; /* Taille maximale du modal */
+    width: 90%; /* Adaptabilité sur petits écrans */
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: #cc0000; /* Titre rouge pour marquer l'importance */
+}
+
+.modal-image {
+    max-width: 100%; /* Assure que l'image est responsive */
+    height: auto;
+    border-radius: 10px;
+}
+
+.close-button {
+    position: absolute; /* Bouton positionné par rapport au modal */
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #aaa; /* Couleur discrète pour ne pas distraire */
+    cursor: pointer; /* Indique l'interactivité */
+    transition: color 0.3s ease; /* Animation douce au survol */
+}
+
+.close-button:hover {
+    color: #cc0000; /* Couleur rouge au survol pour renforcer l'interaction */
+}
+
+/* Contact section */
+.contact-section form {
+    display: flex;
+    flex-direction: column; /* Organisation verticale */
+    max-width: 500px; /* Taille limitée pour le formulaire */
+    margin-top: 2rem;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    padding: 0.5rem; /* Espacement interne pour une meilleure expérience utilisateur */
+    margin-bottom: 1rem;
+    border: 1px solid #ccc; /* Bordures légères pour délimiter les champs */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.contact-section form textarea {
+    min-height: 100px; /* Hauteur minimum pour le champ texte */
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+    font-size: 0.9rem; /* Texte plus petit pour une section discrète */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute; /* Apparition du menu mobile */
+        top: 60px;
+        right: 0;
+        background: #222; /* Fond sombre pour le menu déroulant */
+        flex-direction: column; /* Organisation en colonne */
+        align-items: flex-start;
+        min-width: 150px;
+        display: none; /* Masqué par défaut */
+    }
+    .nav-links.nav-active {
+        display: flex; /* Affichage au clic */
+    }
+    .burger {
+        display: flex; /* Apparition du burger sur mobile */
+    }
+
+    .dangers-content .container {
+        flex-direction: column; /* Organisation verticale sur petits écrans */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; /* Taille réduite du titre sur mobile */
+    }
+}
