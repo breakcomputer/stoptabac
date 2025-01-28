@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Déclaration du jeu de caractères et configuration pour le responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - StopTabac</title>
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- En-tête avec barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo du site -->
+            <div class="logo">StopTabac</div>
+            <!-- Liens de navigation principaux -->
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="dangers.html">Dangers</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li> <!-- Page active marquée par la classe "active" -->
+            </ul>
+            <!-- Menu burger pour les écrans mobiles -->
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- En-tête de la page -->
+    <section class="page-header">
+        <h1>Contact</h1>
+    </section>
+
+    <!-- Section principale avec informations et formulaire -->
+    <section class="contact-section">
+        <div class="container">
+            <!-- Informations de contact -->
+            <h2>Mes informations</h2>
+            <p><strong>Nom :</strong> Hamdaoui</p>
+            <p><strong>Prénom :</strong> Aimad</p>
+            <p><strong>Adresse :</strong> 10 Rue de la Fête, 84300 Cavaillon, France</p>
+            <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
+            
+            <!-- Formulaire de contact -->
+            <h3>Formulaire de Contact</h3>
+            <form>
+                <!-- Champ pour le nom de l'utilisateur -->
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+                <!-- Champ pour l'adresse email -->
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+
+                <!-- Champ pour le message -->
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+
+                <!-- Bouton pour envoyer le formulaire -->
+                <button type="submit" class="btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de page avec droits d'auteur -->
+    <footer>
+        <p>&copy; 2024 StopTabac. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Lien vers le fichier JavaScript pour ajouter une interactivité -->
+    <script src="js/script.js"></script>
+</body>
+</html>

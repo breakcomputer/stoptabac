@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Déclaration du jeu de caractères et optimisation pour appareils mobiles -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dangers du Tabac</title>
+    <!-- Lien vers le fichier de styles CSS externe -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- En-tête avec navigation -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo du site -->
+            <div class="logo">StopTabac</div>
+            <!-- Navigation principale avec indication de la page active -->
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="dangers.html" class="active">Dangers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Menu burger pour navigation mobile -->
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- En-tête de la page actuelle -->
+    <section class="page-header">
+        <h1>Les Dangers du Tabac</h1>
+    </section>
+
+    <!-- Section détaillant les dangers du tabac -->
+    <section class="dangers-content">
+        <div class="container">
+            <div class="dangers-text">
+                <!-- Première sous-section sur les impacts corporels -->
+                <h2>Un Impact Néfaste sur le Corps</h2>
+                <p>
+                    Le tabac est responsable de nombreuses maladies graves. Parmi les plus courantes, on retrouve 
+                    les cancers du poumon, de la gorge et de la bouche, ainsi que les maladies cardiovasculaires. 
+                    L'inhalation des substances toxiques présentes dans la fumée de cigarette endommage les poumons, 
+                    irrite les voies respiratoires, et contribue à la formation de plaques dans les artères, 
+                    augmentant le risque d'infarctus et d'accidents vasculaires cérébraux.
+                </p>
+                <!-- Sous-section sur les impacts environnementaux -->
+                <h2>Un Danger pour l'Environnement</h2>
+                <p>
+                    Les mégots de cigarettes sont également une source de pollution. Ils mettent des années à se dégrader, 
+                    contiennent des produits chimiques nocifs pour la faune et la flore, et polluent les cours d'eau. 
+                    Le tabagisme passif, quant à lui, met en danger les non-fumeurs qui partagent l'environnement 
+                    avec des fumeurs, augmentant leur risque de développer des maladies respiratoires et cardiovasculaires.
+                </p>
+            </div>
+            <!-- Section avec une image illustrant les dangers -->
+            <div class="dangers-image">
+                <img src="images/fumante.png" alt="Cigarette fumante" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Section interactive expliquant les effets sur les poumons -->
+    <section class="lungs-section">
+        <div class="container">
+            <h2>Effets du Tabac sur les Poumons</h2>
+            <p>
+                Découvrez comment le tabagisme affecte la santé de vos poumons et les risques associés.
+            </p>
+            <!-- Bouton pour afficher des informations supplémentaires -->
+            <button id="toggleLungsInfo" class="btn-primary">En savoir plus</button>
+            <div id="lungsInfo" class="hidden">
+                <!-- Liste des conséquences médicales sur les poumons -->
+                <h3>Conséquences sur les Poumons</h3>
+                <ul>
+                    <li><strong>Cancer du Poumon :</strong> Le tabagisme est la principale cause de cancer du poumon.</li>
+                    <li><strong>Bronchite Chronique :</strong> Inflammation des voies respiratoires, entraînant une toux persistante.</li>
+                    <li><strong>Emphysème :</strong> Destruction progressive des alvéoles, réduisant la capacité respiratoire.</li>
+                    <li><strong>Insuffisance Respiratoire :</strong> Diminution sévère de la fonction pulmonaire, pouvant être fatale.</li>
+                </ul>
+                <p>
+                    Arrêter de fumer peut considérablement améliorer la santé de vos poumons et réduire les risques de maladies graves.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section avec un bouton révélant une statistique choquante -->
+    <section class="shocking-section">
+        <div class="container">
+            <h2>La Réalité Choquante</h2>
+            <p>
+                Découvrez une statistique alarmante sur les effets du tabac.
+            </p>
+            <button id="showShockingInfo" class="btn-primary">Voir la réalité</button>
+        </div>
+    </section>
+
+    <!-- Modal pour afficher les statistiques -->
+    <div id="shockingModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Statistique Choquante</h2>
+            <img src="images/fumante.png" alt="Effets du Tabac" class="modal-image" />
+            <p>
+                Saviez-vous que chaque année, le tabagisme tue plus de 7 millions de personnes dans le monde ?
+            </p>
+            <p>
+                C'est plus que le nombre de morts causées par le VIH/SIDA, le paludisme et la tuberculose réunis.
+            </p>
+        </div>
+    </div>
+
+    <!-- Pied de page avec droits d'auteur -->
+    <footer>
+        <p>&copy; 2024 StopTabac. Tous droits réservés.</p>
+    </footer>
+    
+    <!-- Lien vers le fichier JavaScript pour l'interactivité -->
+    <script src="js/script.js"></script>
+</body>
+</html>
